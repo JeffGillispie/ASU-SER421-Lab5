@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>SER 421 - Lab 5</title>
+    <script = src="SPA.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>SER 421 - Lab 5 - Jeff Gillispie (JGILLISP)</h1>
+    <div id="sectionTable"></div>
+    <div id="sectionForm">
+      <br />
+      <form action="#">
+        <label>Please select a third city: </label>
+        <select onchange="return selectionChanged()" id="selector">
+          <option value="Boston">Boston</option>
+          <option value="Chicago">Chicago</option>
+          <option value="Dallas">Dallas</option>
+          <option value="Miami">Miami</option>
+          <option value="Portland">Portland</option>
+        </select>
+        <br />
+        <input type="submit" value="Refresh"
+          onclick="return refreshButtonClicked()" />
+      </form>
+    </div>
+    <div id="sectionTemp"></div>
+    <div id="sectionHumidity"></div>
+    <div id="sectionBestCity"></div>
+    <div id="sectionWorstCity"></div>
+    <div id="sectionMessages"></div>
+    <script>setupHomePage()</script>
+  </body>
+</html>
